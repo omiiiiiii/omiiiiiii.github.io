@@ -1,0 +1,33 @@
+
+#missionSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.card{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 70%;
+    margin: 23px 20px;
+    height: 209px;
+    display: inline-block;
+}
+.card h3{
+    text-align: center;
+    margin: 0 12px;
+    margin-top: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#sponsors{
+    height: 120px;
+    max-width: 1500px;
+    margin: auto;
+    display:block;
+}
+.spImage{
+    height: 20%;
+    margin: 8px;
+    padding: 53px 94px;
+
+}

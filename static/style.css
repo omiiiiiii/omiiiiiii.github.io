@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#navbar{
+    background-color: chocolate;
+    font-family: 'Yeon Sung' ;
+    padding: 13px, 14px;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+     justify-content: center;
+    align-items: center;
+}
+#navbar li{
+    list-style: none;
+}
+#navbar li a{ 
+   text-decoration: none;
+    padding: 13px 38px;
+}
+#navbar li a:hover{
+    color: black;  
+}
+#missionSection h2{
+    text-align: center;
+    padding: 10px;
+}
+#missionSection{
+    background-color: bisque
+}
+#sponsorsSection{
+    height: 300px;
+    background-color: #fbd6d6c7;
+}
+#sponsorsSection h2{
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.card{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 30%;
+    margin: 23px 20px;
+    height: 209px;
+    display: inline-block;
+}
+.card h3{
+    text-align: center;
+    margin: 0 12px;
+    margin-top: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 0 14px;
+    font-size: 1.3rem;
+    margin-right: 40px;
+}
+#logo img{
+    height: 42px;
+    filter
+    : invert(1);
+}
+.card-img{
+    height: 131px;
+    padding: 0 14px;
+    margin: 5px 9px;
+}
+.card-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-img img{
+    height: inherit; 
+}
+#sponsors{
+    height: 120px;
+    max-width: 100px;
+    margin: auto;
+    display: inline-flex;
+}
+
+.spImage{
+    height: 96px;
+    margin: 8px;
+    padding: 53px 94px;
+
+}
+#footer{
+    background-color: black;
+    height: 60px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+   

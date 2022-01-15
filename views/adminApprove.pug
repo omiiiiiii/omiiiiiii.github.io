@@ -1,0 +1,21 @@
+extends Adminbase.pug
+
+
+block style 
+    style
+      include ../static/adminApprovestyle.css
+      include ../static/Adminbasestyle.css
+
+block scripts
+    script(src='/static/AdminApprove.js')
+
+
+block content
+    div.container 
+        div.innercontainer
+            form(action= "/finalAdminAprroval", method= "post", class= "Reset" )
+                h1  Confirm Approval  
+                <input type="text" class= "EventInput" id="Username" name="Username" readonly  required>
+                <input type="Password" class= "EventInput" id="Password" name="Password" readonly  required>
+                button(class="Ebtn" id="AddEvent"  onclick ="dlt()")
+                        |Confirm

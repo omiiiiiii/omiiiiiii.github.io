@@ -1,0 +1,25 @@
+.innercontainer{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 498px;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    background: antiquewhite;
+    box-shadow: -1px 4px 28px 0px rgb(0 0 0 / 75%);
+    border-radius: 10px;
+}
+.container{
+    min-height: 40vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    background-image: url("/static/img/logback.jpg");
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}

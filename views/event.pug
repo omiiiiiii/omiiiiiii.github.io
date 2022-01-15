@@ -1,0 +1,25 @@
+extends base.pug
+
+
+block style 
+    style
+        include ../static/style.css
+        include ../static/addeventstyle.css
+    link(rel='stylesheet' media='only screen and (max-device-width:600px)' href='../static/phoneventstyle.css')
+
+block scripts
+      script(src='/static/index.js')
+block content
+    div.container 
+        div.innercontainer
+            form(action= "/event", method= "post", class= "Reset" )
+                h1  Add Event  
+                <input type="text"class= "EventInput" id="Eventname" name="Eventname" placeholder="Enter Eventname.." required>
+                <input type="text"class= "EventInput" id="name" name="name" placeholder="Host Name.."  required>
+                <input type="date"class= "EventInput" name="date" id="mindte"  onclick ="mindate()"  required>
+                <input type="time"class= "EventInput" id="time" name="time"  placeholder="time.." required>
+                <input type="email" class= "EventInput" id="file" name="file" placeholder="valid email id.."  required>
+                <input type="text"class= "EventInput" id="discription" name="discription" placeholder="discription please.." required>
+                button(class="Ebtn" id="AddEvent" onclick ="AEvent(this.form)")
+                        |Add Event
+

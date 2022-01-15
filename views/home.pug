@@ -1,0 +1,47 @@
+extends base.pug
+
+block scripts
+      script(src='/static/index.js')
+
+block style 
+    style 
+        include ../static/style.css
+    link(rel='stylesheet' media='only screen and (max-device-width: 1320px)' href='../static/phonestyle.css')
+    
+
+block content
+    section#missionSection
+        h2 Our Mission
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/img/1.png")
+                div.card-content
+                    p This is the best dance academy of the universe
+
+        div.card
+            h3 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="/static/img/2.png")
+                div.card-content
+                    p This is the best dance academy of the universe
+
+        div.card
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/img/3.png")
+                div.card-content
+                    p This is the best dance academy of the universe
+       
+        section#sponsorsSection
+            h2 Our  Clients 
+            div#sponsors
+                img(src="/static/img/Asus.png", alt="Image not found" Class="spImage")
+                img(src="/static/img/HP.png", alt="Image not found" Class="spImage")
+                img(src="/static/img/mi.png", alt="Image not found" Class="spImage")
+                img(src="/static/img/sony.png", alt="Image not found" Class="spImage")
+
+

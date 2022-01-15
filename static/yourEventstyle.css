@@ -1,0 +1,59 @@
+.container{
+    min-height: 82vh;
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    margin-top: 20px;
+
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+#tbody{
+    color: rgb(38, 133, 136);
+    border: 1px ;
+}
+#tbody img{
+    height: 60px;
+}
+#tbody tr{
+    text-align: center;
+}
+#tbody tr th{
+    color: black;
+}
+#missionSection1 {
+    background-color: bisque;
+    border: 1px solid black;
+    border-radius: 12px;
+}
+.card-box1{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    
+}
+.card-img1{
+    margin: auto;
+}
+.lbtn{
+    width: 90px;
+    border: 2px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 35px;
+    background: slategrey;
+
+}
+.btn{
+    border-radius: 5px;
+    width: 74px;
+    height: 30px;
+    cursor: pointer;
+}
+.btn:hover {
+	color: #fff;
+	background: #104e99;
+}

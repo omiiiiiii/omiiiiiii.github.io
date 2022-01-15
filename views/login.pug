@@ -1,0 +1,23 @@
+extends base.pug
+
+block scripts
+      script(src='/static/index.js')
+
+block style 
+    style
+        include ../static/style.css
+        include ../static/loginstyle.css
+    link(rel='stylesheet' media='only screen and (max-device-width:550px)' href='../static/phoneloginstyle.css')
+
+block content
+    div.container 
+        div.innercontainer
+            form(action= "/login", method= "POST", class= "loginform ")
+                p Login ODA 
+                <input type="text"class= "loginInput" name="Username" placeholder="Enter your Username.." required>
+                <input type="password" class= "loginInput" name="pass" placeholder="Enter your password.." required>
+                button(class="Lbtn")
+                    |Login
+                li #[a(href="/SignUp") Dont have an account Signup]
+                li #[a(href="/ResetPass") forgot password]   
+                

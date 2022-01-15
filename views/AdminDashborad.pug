@@ -1,0 +1,62 @@
+extends Adminbase.pug
+
+
+block style 
+    style
+      include ../static/AdminDashboardstyle.css
+      include ../static/Adminbasestyle.css
+    link(rel='stylesheet' media='only screen and (max-device-width:600px)' href='../static/phoneadmindashboardstyle.css')
+
+block scripts
+      script(src='/static/Admin.js')
+
+
+block content
+  div.container
+      button(class="tablink" onclick="openPage('AddedEvents',this,'indianred')")
+            |AddedEvents
+      button(class="tablink" onclick="openPage('AdminData',this,'indianred')")
+            |AdminData
+      button(class="tablink" onclick="openPage('Participant',this,'indianred')")
+            |Participant
+      div.tabcontent#AddedEvents
+            h3 AddedEvents
+            table(id='tablebody')
+                  thead
+                        tr
+                              th ID
+                              th Eventname
+                              th Host Name
+                              th Date
+                              th Time 
+                              th Host Email
+                              th Discription
+                              th Approve 
+                              th Reject 
+                        tr
+                  tbody(id="tbody")
+      div.tabcontent#AdminData
+            h3 AdminData
+            table(id='tablebody1')
+                  thead
+                        tr
+                              th ID
+                              th UserName 
+                              th Approve 
+                              th Reject  
+                        tr
+                  tbody(id="tbody1")
+      div.tabcontent#Participant
+            h3 Participant
+            table(id='tablebody2')
+                  thead
+                        tr
+                              th ID
+                              th Event
+                              th TeamName 
+                              th Player Count
+                              th LeadName 
+                              th Contact
+                              th Alternate Contact    
+                        tr
+                  tbody(id="tbody2")

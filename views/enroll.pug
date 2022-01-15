@@ -1,0 +1,22 @@
+extends base.pug
+
+block scripts
+      script(src='/static/enroll.js')
+
+block style 
+      style
+        include ../static/style.css
+        include ../static/enrollstyle.css
+block content
+    div.container 
+        div.innercontainer
+            form(action= "/enrollaproval", method= "post", class= "Reset" )
+                h1  Enroll to Event  
+                <input type="text"class= "Enroll" id="Eventname" name="Eventname" readonly  value=#{event}  required>
+                <input type="text"class= "Enroll" id="TeamName" name="TeamName" placeholder="TeamName.."  required>
+                <input type="text"class= "Enroll" name="Count" id="Count"  placeholder="Player Count"  required>
+                <input type="text"class= "Enroll" id="LeadName" name="LeadName"  placeholder="LeadName" required>
+                <input type="phone"class= "Enroll" id="Contact" name="Contact"  placeholder="Contact Number" pattern="[6-9]{1}[0-9]{9}"  onblur="CheckContact()" required>
+                <input type="phone"class= "Enroll" id="Alternate" name="Alternate" placeholder="Alternate Contact Number" pattern="[6-9]{1}[0-9]{9}"  onblur="CheckAContact()" required>
+                button(class="Ebtn" id="AddEvent" onclick ="enroll(this.form)")
+                        |Enroll

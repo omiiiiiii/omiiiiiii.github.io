@@ -1,0 +1,23 @@
+extends Adminbase.pug
+
+
+block style 
+    style
+      include ../static/AdminSignupstyle.css
+      include ../static/Adminbasestyle.css
+    link(rel='stylesheet' media='only screen and (max-device-width:600px)' href='../static/phoneadminsignupstyle.css')
+block scripts
+      script(src='/static/Admin.js')
+      script(src='/static/AdminSignup.js')
+
+
+block content
+  div.container 
+    div.innercontainer
+      form(action= "/AdminSignup", method= "POST", class= "loginform ")
+        p Admin Login ODA 
+        <input type="email"class= "loginInput" name="Username" id="Username" placeholder="Enter your Username.." required>
+        <input type="password" class= "loginInput" name="pass" id = "pass" onblur="CheckPassword()" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}" placeholder="Enter your password.." required>
+        <input type="password" class= "loginInput" name="cpass" id = "cpass" onblur="confirmPass()" placeholder="Enter your password.." required>
+        button(class="Lbtn" onclick="Signup(this.form)")
+          |SignUp

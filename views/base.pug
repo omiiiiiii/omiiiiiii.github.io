@@ -1,0 +1,21 @@
+doctype html 
+html
+  head
+    title Om's Dance Academy
+    block scripts
+    block style
+  body
+    nav#navbar
+      ul
+        div#logo
+          img(src="/static/img/3.png")
+          | ODA
+        li #[a(href="/home") Home]
+        li #[a(href="/login") Login]
+        li #[a(href="/SignUp") Sign Up]
+        li #[a(href="/event") Add Events]
+        li #[a(href="/yourEvent")  Your Events]
+        li #[a(href="/contact") Contact Us]
+    block content
+    footer#footer
+        | Copyright © 2021 OmAcademy.com | All Rights Reserved

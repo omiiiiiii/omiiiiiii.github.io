@@ -1,0 +1,36 @@
+.myForm{
+    /* background-color: tomato; */
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+    margin: revert;
+}
+.myInput{
+    padding: 9px;
+    margin: 12px;
+    border: 2px solid;
+    border-radius: 9px;
+}
+.btn{
+    width: 20%;
+    margin: auto;
+    font-size: 24px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+.btn:hover {
+    color: blue;
+    cursor: pointer;
+}
+.container{
+    min-height: 82vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+}

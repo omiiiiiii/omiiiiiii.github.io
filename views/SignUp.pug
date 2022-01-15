@@ -1,0 +1,24 @@
+extends base.pug
+
+
+block scripts
+      script(src='/static/index.js')
+
+block style 
+    style
+        include ../static/style.css
+        include ../static/loginstyle.css
+        include ../static/signupstyle.css
+    link(rel='stylesheet' media='only screen and (max-device-width:500px)' href='../static/phonelsignupstyle.css')
+
+block content
+    div.container 
+        div.innercontainer1
+            form(action= "/SignUp",name ="form1" method= "post", class= "Signupform ")
+                p SignUp to ODA 
+                <input type="text"class= "loginInput" name="Username" placeholder="Enter your Username.." required>
+                <input type="password" id="pass" class= "loginInput" name="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}" placeholder="Enter your password.." onblur="CheckPassword()"  required>
+                <input type="password" id="cpass" class= "loginInput" name="Cpass" placeholder="Confirm your password.." onblur="confirmPass()" required>
+                button(class="Sbtn")
+                    |SignUp
+                li #[a(href="/login") Alredy have an account login] 

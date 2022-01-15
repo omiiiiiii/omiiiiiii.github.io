@@ -1,0 +1,21 @@
+extends base.pug
+
+block scripts
+      script(src='/static/index.js')
+
+block style 
+    style
+        include ../static/style.css
+        include ../static/Resetstyle.css
+    link(rel='stylesheet' media='only screen and (max-device-width:500px)' href='../static/phonelresetstyle.css')
+block content
+    div.container 
+        div.innercontainer1
+            form(action= "/ResetPass", method= "post", class= "Reset")
+                p Reset Your Password
+                <input type="text"class= "ResetInput" name="Username" placeholder="Enter your Username.." required>
+                <input type="password" id="pass" class= "ResetInput" name="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}" placeholder="Enter new password.." onblur="CheckPassword()" required>
+                <input type="password" id="cpass" class= "ResetInput" name="Cpass" placeholder="Confirm new password.." onblur="confirmPass()" required>
+                button(class="Sbtn")
+                    |Reset
+                

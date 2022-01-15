@@ -1,0 +1,33 @@
+extends base.pug
+
+
+block scripts
+      script(src='/static/index.js')
+      script(src='/static/yourEvent.js')
+
+
+block style 
+    style
+        include ../static/style.css
+        include ../static/yourEventstyle.css
+    link(rel='stylesheet' media='only screen and (max-device-width:500px)' href='../static/phoneyoureventstyle.css')
+
+block content
+    form(action= "/logout", method= "post", class= "logout" )
+            button(class="lbtn" id="AddEvent")
+                |logout
+    div.container 
+        h1 Upcoming Events
+        table(id='tablebody')
+            thead 
+                tr
+                    th Id
+                    th Eventname
+                    th Host Name
+                    th Date
+                    th Time 
+                    th Host Email
+                    th Discription 
+                    th Enroll 
+                tr
+            tbody(id="tbody")

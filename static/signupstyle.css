@@ -1,0 +1,62 @@
+.innercontainer1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 498px;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    background: antiquewhite;
+    box-shadow: -1px 4px 28px 0px rgb(0 0 0 / 75%);
+    border-radius: 10px;
+}
+
+p{
+    font-size: 48px;
+    width: 124%;
+    margin: auto;
+    padding: 8px;
+}
+.Signupform{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+    justify-content: center;
+}
+.Signupform input[type=text],.Signupform input[type=password]{
+    border: none;
+	border-bottom: 1px solid black;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: red;
+	/* font-size: 16px; */
+    width: 75%;
+    margin: auto;
+}
+.Sbtn{
+    width: 47%;
+    margin: auto;
+    margin-top: 12px;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 8px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+.Sbtn:hover {
+	color: #fff;
+	background: #104e99;
+}
+.Signupform li{
+    list-style: none;
+    padding: 6px;
+    text-align: center;
+}
+.Signupform li a{ 
+    text-decoration: none;
+    font-size: 11px;
+    color: green;
+}
